@@ -37,6 +37,8 @@ mod not_wasm {
         base_mode: Option<InputMode>,
     ) -> ModeInfo {
         let keybinds = keybinds.to_keybinds_vec();
+        let t  = keybinds.clone();
+        log::info!("my lalala1 is: {:?}", t);
         let session_name = envs::get_session_name().ok();
 
         ModeInfo {
